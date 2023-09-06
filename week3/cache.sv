@@ -1,5 +1,5 @@
 /*
-The program provided above simulates a simple cache memory system using object-oriented programming in SystemVerilog.
+This program provides above simulates a simple cache memory system using object-oriented programming in SystemVerilog.
 */
 class CacheLine;
   int tag;

@@ -1,5 +1,5 @@
 /*
-The provided program is an example of a testbench using the Universal Verification Methodology (UVM) in SystemVerilog.
+This program is an example of a testbench using the Universal Verification Methodology (UVM) in SystemVerilog.
 It includes UVM components such as a UVM driver, a UVM monitor, and a Design Under Test (DUT). 
 */
 
