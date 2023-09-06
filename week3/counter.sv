@@ -1,3 +1,7 @@
+/*
+Example of object-oriented programming (OOP) in SystemVerilog
+*/
+
 class MyCounter;
   // Declare class properties
   int count;
