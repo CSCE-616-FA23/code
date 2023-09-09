@@ -5,7 +5,7 @@ This program simulates a simple memory-mapped bus communication system using Sys
 class Bus;
   rand bit [31:0] data;
   rand bit [7:0] address;
-  bit [31:0] memory[256];
+  bit [31:0] memory[256]; // An array of 256 32-bit element
 
   function new();
     data = 0;
@@ -52,8 +52,8 @@ endmodule
 
 module TestBus;
   Bus bus = new();
-  CPU #(bus) cpu();
-  GPU #(bus) gpu();
+  CPU #(bus) cpu(); // Same bus instance is passed as an argument to the CPU
+  GPU #(bus) gpu(); // Same bus instance is passed as an argument to the GPU
   
   initial begin
     // Simulate CPU and GPU operations

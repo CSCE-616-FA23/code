@@ -19,12 +19,12 @@ package my_uvm_pkg;
     endfunction
 
     function void do_print(uvm_printer printer);
-      super.do_print(printer);
+      super.do_print(printer); // (The parent class is called the Superclass)
       printer.print_field("addr", addr, $bits(addr));
       printer.print_field("data", data, $bits(data));
     endfunction
 
-    virtual function string convert2string;
+    virtual function string convert2string; // This function can be overridden in any dereived class
       return $sformatf("addr=%h, data=%h", addr, data);
     endfunction
   endclass
