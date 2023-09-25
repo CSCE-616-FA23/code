@@ -27,7 +27,7 @@ module memory (
         read_enable inside {[0:1]};
 
         // Randomize the inputs while respecting constraints
-        repeat(10) begin
+        repeat(10) begin // 10 random operatins on memory
             if (write_enable == 1'b1) begin
                 // Randomize address and data for write operation
                 address.randomize();
