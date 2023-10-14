@@ -40,6 +40,7 @@ class mem_monitor extends uvm_monitor;
   // run_phase - convert the signal level activity to transaction level.
   // i.e, sample the values on interface signal ans assigns to transaction class fields
   //---------------------------------------
+  // This is where the monitoring activity actually happens!
   virtual task run_phase(uvm_phase phase);
     forever begin
       @(posedge vif.MONITOR.clk);

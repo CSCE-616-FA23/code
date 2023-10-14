@@ -1,4 +1,4 @@
-//including interfcae and testcase files
+//including interface and testcase files
 `include "interface.sv"
 `include "test.sv"
 `include "wr_rd_test.sv"
