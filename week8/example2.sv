@@ -1,4 +1,5 @@
 /*
+Description:
 The * operator is the repetition operator, and the [3] range operator specifies that the expression should be repeated 3 times.
 The ## operator is the delay operator, and the 1 value specifies that there should be a delay of 1 clock cycle between each repetition of the expression.
 Therefore, the expression a[*3] equals a ##1 a ##1 a asserts that the signal a will be asserted on the current clock cycle, and then again on the next 2 clock cycles.
