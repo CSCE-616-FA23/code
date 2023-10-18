@@ -8,7 +8,8 @@ Behavior:
 This assertion will pass if the signal a is asserted on the current clock cycle, and then again on the next 2 clock cycles. Otherwise, the assertion will fail.
 */
 
-assert property (a[*3] equals a ##1 a ##1 a);
+assert property (a[*3]);
+assert property (a ##1 a ##1 a);
 
 always @(posedge clk) begin
   a <= 1'b0;

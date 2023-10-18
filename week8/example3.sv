@@ -11,7 +11,8 @@ Behavior:
 This assertion will pass if the signal a toggles to its opposite value, and the opposite value is asserted for any number of clock cycles, up to an infinite number of clock cycles, followed by the assertion of the signal a after a delay of 1 clock cycle. Otherwise, the assertion will fail.
 */
 
-assert property (a[->1] equals (!a)[*0:$] ##1 a);
+assert property (a[->1]);
+assert property ((!a)[*0:$] ##1 a);
 
 always @(posedge clk) begin
   a <= 1'b0;

@@ -15,7 +15,8 @@ Behavior:
 This assertion will pass if the signal a is asserted for 1 clock cycle, followed by the signal !a being asserted for any number of clock cycles, up to an infinite number of clock cycles, followed by the signal a being asserted for another 1 clock cycle. Otherwise, the assertion will fail.
 */
 
-assert property (a[=1] equals (!a)[*0:$] ##1 a ##1 (!a)[*0:$]);
+assert property (a[=1]);
+assert property ((!a)[*0:$] ##1 a ##1 (!a)[*0:$]);
 
 always @(posedge clk) begin
   a <= 1'b0;
