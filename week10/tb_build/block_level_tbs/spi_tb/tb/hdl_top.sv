@@ -35,7 +35,7 @@ spi_if SPI();  // SPI Interface
 intr_if INTR();   // Interrupt
 
 //
-// Instantiate the BFM interfaces:
+// Instantiate the BFM interfaces (Bus Functional Model)
 //
 apb_monitor_bfm APB_mon_bfm(
    .PCLK    (APB.PCLK),
@@ -77,7 +77,7 @@ intr_bfm INTR_bfm(
 );
 
   
-// DUT
+// DUT instantiation (SPI Master)
 spi_top DUT(
     // APB Interface:
     .PCLK(PCLK),
